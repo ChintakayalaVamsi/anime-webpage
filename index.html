@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="./index.css">
+</head>  
+<body> 
+    
+    <div id="fights">
+        <div id="header">
+            <input id="left" class="d" type="button" value="<" onclick="dec()">
+            <input id="right" class="i" type="button" value=">" onclick="inc()">
+        </div>
+    </div>
+    <center><div id="top"><h1>Anime Zone <input id="sea" type="search"></h1></div> </center>
+    <div id="menu">
+        <div id="m" class="b"><a href="file:///D:/webtechnology/anime/index.html">HOME</a></div>
+        <div id="m" class="b">CATEGORIES</div>
+        <div id="m"class="b">UPCOMING ANIME</div>
+        <div id="m"class="b">TOP RATED ANIME</div>
+        <div id="m"class="b">INFO</div>
+    </div>
+    <p><h1>Recommended Anime To Watch</h1></p>
+    <div id="swipe"></div>
+    <div id="swi1">
+<div id="rowI">
+    <div id="a" class="a"><div   class="sty" id="nar"><a href="https://t.me/Naruto_english_dubbed_subbed_eng">  <h1>Naruto</h1>     </a></div> </div> 
+    <div id ="b" class="a"><div  class="sty" id="dem"><a href="https://t.me/Entertainment_District_Arc_dub"> <h1>Demon Slayer</h1></a></div></div>
+    <div id ="c" class="a"> <div class="sty" id="one"><a href="https://t.me/+VOqueH-rRtIxNzg1
+        https://t.me/One_Piece_English_Dubbed_Sub_E"><h1>One piece</h1>    </a> </div></div>
+</div>
+<div id="rowII">
+    <div id="d" class="a"><div  class="sty" id="ju"> <a href="https://t.me/jujustukaisen0"><h1>Jujutsu Kaisen</h1>  </a></div></div>
+    <div id="e" class="a"><div  class="sty" id="mha"><a href="https://t.me/Academia_boku_no_hero"><h1>My Hero Academia</h1></a></div></div>
+    <div id="f" class="a"> <div class="sty" id="bc"> <a href="https://t.me/c/1479027969/7"><h1>Black clover</h1>    </a> </div></div>
+</div>
+</div>
+<div id="swi2">
+    <div id="rowI">
+        <div id="a" class="a"><div   class="sty" id="nar"><a href="https://t.me/Naruto_english_dubbed_subbed_eng">  <h1>Naruto</h1>     </a></div> </div> 
+        <div id ="b" class="a"><div  class="sty" id="dem"><a href="https://t.me/Entertainment_District_Arc_dub"> <h1>Demon Slayer</h1></a></div></div>
+        <div id ="c" class="a"> <div class="sty" id="one"><a href="https://t.me/+VOqueH-rRtIxNzg1
+            https://t.me/One_Piece_English_Dubbed_Sub_E"><h1>One piece</h1>    </a> </div></div>
+    </div>
+    <div id="rowII">
+        <div id="d" class="a"><div  class="sty" id="ju"> <a href="https://t.me/jujustukaisen0"><h1>Jujutsu Kaisen</h1>  </a></div></div>
+        <div id="e" class="a"><div  class="sty" id="mha"><a href="https://t.me/Academia_boku_no_hero"><h1>My Hero Academia</h1></a></div></div>
+        <div id="f" class="a"> <div class="sty" id="bc"> <a href="https://t.me/c/1479027969/7"><h1>Black clover</h1>    </a> </div></div>
+    </div>
+</div>
+
+<script>
+    var imgarr=["5x.gif","3x.gif","2x.gif"]
+var indval=0;
+function inc()
+        {
+            if(indval==3)
+            {
+                indval=0;
+            }
+            
+            document.getElementById("fights").style.backgroundImage="url("+imgarr[indval]+")"
+            indval++;
+        }
+        function dec()
+        {
+            if(indval==-1)
+            {
+                indval=3;
+            } 
+            document.getElementById("fights").style.backgroundImage="url("+imgarr[indval]+")"
+            indval--;
+        }
+
+</script>
+</body>
+</html>
